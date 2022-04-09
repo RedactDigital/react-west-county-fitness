@@ -4,18 +4,18 @@ import { Send } from '@mui/icons-material'
 function Header({ email }) {
   const header = {
     background:
-      'linear-gradient(black 5%, transparent 95%), url("assets/header.jpg")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: ' no-repeat',
+      'linear-gradient(black 3%, transparent 95%), url("assets/header3.jpg")',
+    backgroundSize: 'contain',
+    backgroundRepeat: ' no-repeat no-repeat',
     color: '#fff',
     paddingTop: '260px',
     paddingBottom: '300px',
     height: '100vh',
+    textAlign: 'right',
   }
 
   return (
-    <header style={header}>
+    <Box variant="header" style={header}>
       <Container maxWidth="lg">
         <Grid>
           <Typography variant="h2" fontWeight={600}>
@@ -39,7 +39,40 @@ function Header({ email }) {
           </Typography>
         </Grid>
         <Grid marginTop={4}>
-          <Typography variant="h4">Decide, Commit, Succeed</Typography>
+          <Typography
+            variant="h4"
+            fontWeight={800}
+            color="secondary"
+            sx={{ display: 'inline' }}
+          >
+            Build{' '}
+          </Typography>
+          <Typography variant="h2" sx={{ display: 'inline' }}>
+            Your Body
+          </Typography>
+        </Grid>
+        <Grid>
+          <Typography
+            variant="h4"
+            fontWeight={800}
+            color="primary"
+            sx={{ display: 'inline' }}
+          >
+            Transform{' '}
+          </Typography>
+          <Typography variant="h4" sx={{ display: 'inline' }}>
+            Your Life
+          </Typography>
+        </Grid>
+        <Grid>
+          <Typography mt={1} fontWeight={600}>
+            As a family owned fitness center, we are committed to providing the
+            best
+          </Typography>
+          <Typography mt={1} fontWeight={600}>
+            opportunity for personal growth in a fun, safe and healthy
+            environment.
+          </Typography>
         </Grid>
         <Grid marginTop={4}>
           <Button
@@ -51,7 +84,7 @@ function Header({ email }) {
           </Button>
         </Grid>
       </Container>
-    </header>
+    </Box>
   )
 }
 

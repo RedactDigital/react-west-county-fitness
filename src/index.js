@@ -6,10 +6,10 @@ import App from './App'
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#0048bd',
+      main: '#217CB9',
     },
     secondary: {
-      main: '#fff',
+      main: '#21ADB9',
     },
   },
   typography: {
